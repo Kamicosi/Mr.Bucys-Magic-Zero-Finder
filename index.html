@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zeros Finder</title>
+    <script src="math.js"></script>
+</head>
+
+<body>
+    <h1>Mr. Bucy's Magic Zero Finder</h1>
+    <form action="math.js">
+        <div>
+            <pre class="tab">Function:</pre>
+            <input id="x^4" type="number">x<sup>4</sup> +
+            <input id="x^3" type="number">x<sup>3</sup> +
+            <input id="x^2" type="number">x<sup>2</sup> +
+            <input id="x^1" type="number">x +
+            <input id="x^0" type="number">
+        </div>
+
+        <div><br>
+            <input id="x" type="number" placeholder="Guess">
+        </div>
+        <div><br>
+            <input type="button" name="button" onClick="zeros()" value="Calculate">
+        </div>
+
+
+    </form>
+
+    <p id="result">Result</p>
+</body>
+
+</html>
