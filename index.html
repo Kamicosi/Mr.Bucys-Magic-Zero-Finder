@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Zeros Finder</title>
     <script src="math.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <h1>Mr. Bucy's Magic Zero Finder</h1>
     <form action="math.js">
-      <div>
-        <pre class="tab">Function:</pre>
-        <input id="x^4" type="number" style="width: 2%" />x<sup>4</sup> +
-        <input id="x^3" type="number" style="width: 2%" />x<sup>3</sup> +
-        <input id="x^2" type="number" style="width: 2%" />x<sup>2</sup> +
-        <input id="x^1" type="number" style="width: 2%" />x +
-        <input id="x^0" type="number" style="width: 2%" />
-      </div>
+        <div>
+            <pre class="tab">Function:</pre>
+            <input id="x^4" type="number" style="width: 3%" />x<sup>4</sup> +
+            <input id="x^3" type="number" style="width: 3%" />x<sup>3</sup> +
+            <input id="x^2" type="number" style="width: 3%" />x<sup>2</sup> +
+            <input id="x^1" type="number" style="width: 3%" />x +
+            <input id="x^0" type="number" style="width: 3%" />
+        </div>
 
-      <div>
-        <br />
-        <input id="x" type="number" placeholder="Guess" style="width: 3.5%" />
-      </div>
-      <div>
-        <br />
-        <input
-          type="button"
-          name="button"
-          onClick="zeros()"
-          value="Calculate"
-        />
-      </div>
+        <div>
+            <pre class="tab">Check for Zeros Between:</pre>
+            <input id="xmin" type="number" style="width: 10%" placeholder="x min" /> and
+            <input id="xmax" type="number" style="width: 10%" placeholder="x max" />
+        </div>
+
+        <div>
+            <br />
+            <input type="button" name="button" onClick="zeros()" value="Calculate" />
+        </div>
     </form>
 
+    <div id="progress"> </div>
+
     <p id="result">Result</p>
-  </body>
-  <style>
+</body>
+<style>
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
+        -webkit-appearance: none;
+        margin: 0;
     }
-
+    
     input[type="number"] {
-      -moz-appearance: textfield; /* Firefox */
+        -moz-appearance: textfield;
+        /* Firefox */
     }
-  </style>
+</style>
+
 </html>
